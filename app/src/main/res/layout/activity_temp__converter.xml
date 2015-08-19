@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".Temp_Converter"
+    android:background="@drawable/tempconv">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Degrees"
+        android:id="@+id/degreesTextView"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fahrenheit"
+        android:id="@+id/fahrenheitTextView"
+        android:layout_marginTop="76dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_below="@+id/degreesTextView"
+        android:layout_toLeftOf="@+id/degreesTextView"
+        android:layout_toStartOf="@+id/degreesTextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Celsius"
+        android:id="@+id/celsiusTextView"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="54dp"
+        android:layout_below="@+id/fahrenheitEditText"
+        android:layout_alignLeft="@+id/fahrenheitTextView"
+        android:layout_alignStart="@+id/fahrenheitTextView" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/fahrenheitEditText"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        android:layout_alignBottom="@+id/fahrenheitTextView"
+        android:layout_alignLeft="@+id/degreesTextView"
+        android:layout_alignStart="@+id/degreesTextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/conversionTextView"
+        android:layout_alignBottom="@+id/celsiusTextView"
+        android:layout_alignLeft="@+id/fahrenheitEditText"
+        android:layout_alignStart="@+id/fahrenheitEditText"
+        android:textSize="20sp"
+        android:textStyle="normal" />
+</RelativeLayout>
